@@ -1,0 +1,31 @@
+{
+    "name": "mmhk/laravel-ga-embed",
+    "description": "google analytics embed dashboard for laravel",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Sam Zhou",
+            "email": "sam@mixmedia.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "google/apiclient": "^2.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "MMHK\\GA\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MMHK\\GA\\GoogleAnalyticsEmbedServiceProvider"
+            ],
+            "aliases": {
+                "GAEmbed": "MMHK\\GA\\GAEmbed"
+            }
+        }
+    }
+}

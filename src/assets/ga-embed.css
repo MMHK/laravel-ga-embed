@@ -1,0 +1,7 @@
+.ga-wrapper .ga-dashboard-panel {
+    width: 100%;
+    padding: 0;
+}
+.ga-dashboard-panel .container {
+    margin: 1em 0;
+}
